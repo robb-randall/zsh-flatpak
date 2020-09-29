@@ -16,6 +16,7 @@ alias fp-se-u='flatpak search --user'
 
 # Update flatpaks
 alias fp-up='flatpak update'
+alias fp-up-u='flatpak update --user'
 
 # Turn installed applications into functions (used for dmenu)
 # TODO
