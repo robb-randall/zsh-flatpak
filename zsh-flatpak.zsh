@@ -1,4 +1,3 @@
-
 # List installed flatpaks
 alias flatpaks='flatpak list'
 
