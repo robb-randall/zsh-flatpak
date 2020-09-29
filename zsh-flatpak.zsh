@@ -4,7 +4,7 @@ alias flatpaks='flatpak list'
 
 # Install flatpaks
 alias fp-in='flatpak install'
-alias fp-inu='flatpak isntall --user'
+alias fp-inu='flatpak install --user'
 
 # List installed flatpaks
 alias fp-ls='flatpak list'
