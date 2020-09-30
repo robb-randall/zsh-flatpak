@@ -10,7 +10,7 @@ When the script is ran, it adds the following alias, along with aliases for each
 |Name|What|Command|
 |:--:|:--:|:-----:|
 |flatpaks|List all installed flatpak applications|```flatpak list```|
-|fp-a|Show all flatpak application aliases|```alias | grep "flatpak run"```|
+|fp-a|Show all flatpak application aliases|```alias \| grep "flatpak run"```|
 |fp-alias|Show all flatpak application aliases|```fp-a```|
 |fp-in|Install a flatpak application|```flatpak install```|
 |fp-inu|Install a user flatpak application|```flatpak install --user```|
