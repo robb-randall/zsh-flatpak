@@ -1,5 +1,5 @@
 # List installed flatpaks
-alias flatpaks='flatpak list'
+alias flatpaks='flatpak list --app'
 
 # Show flatpak alias
 alias fp-a='alias | grep "flatpak run"'
@@ -10,8 +10,8 @@ alias fp-in='flatpak install'
 alias fp-inu='flatpak install --user'
 
 # List installed flatpaks
-alias fp-ls='flatpak list'
-alias fp-lsu='flatpak list --user'
+alias fp-ls='flatpak list --app'
+alias fp-lsu='flatpak list --app --user'
 
 # Search flatpaks
 alias fp-se='flatpak search'
@@ -31,11 +31,11 @@ flatpak_add_alias () {
 }
 
 # Adds an alias for every install flatpak application
-foreach app in $(flatpak list --columns=application --all) ; do
+foreach app in $(flatpak list --columns=application --app) ; do
     flatpak_add_alias $app
 ; done
 
 # Adds an alias for every user installed flatpak (overwriting all alias)
-foreach app in $(flatpak list --columns=application --user) ; do
+foreach app in $(flatpak list --columns=application --user --app) ; do
     flatpak_add_alias $app --user
 ; done
