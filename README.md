@@ -9,13 +9,13 @@ When the script is ran, it adds the following alias, along with aliases for each
 ### Aliases
 |Name|What|Command|
 |:--:|:--:|:-----:|
-|flatpaks|List all installed flatpak applications|```flatpak list```|
+|flatpaks|List all installed flatpak applications|```flatpak list --app```|
 |fp-a|Show all flatpak application aliases|```alias \| grep "flatpak run"```|
 |fp-alias|Show all flatpak application aliases|```fp-a```|
 |fp-in|Install a flatpak application|```flatpak install```|
 |fp-inu|Install a user flatpak application|```flatpak install --user```|
-|fp-ls|List all installed flatpak applications|```flatpak list```|
-|fp-lsu|List all installed user flatpak applications|```flatpak list --user```|
+|fp-ls|List all installed flatpak applications|```flatpak list --app```|
+|fp-lsu|List all installed user flatpak applications|```flatpak list --app --user```|
 |fp-se|Search for a flatpak application|```flatpak search```|
 |fp-seu|Search for a user flatpak application|```flatpak search --user```|
 |fp-up|Update all flatpak applications|```flatpak update```|
