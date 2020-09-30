@@ -26,15 +26,16 @@ flatpak_add_alias () {
 	# Using Application name, extract the name and lowercase it
 	local name=$(echo ${1:l} | grep -Po '[^\.]+$')
 
-	# Create the zsh function to launch the flatpak app
-	#$name () { flatpak run $1 }
-
 	# Alias the function
-	alias $name="flatpak run $1"
-	
+	alias $name="flatpak run $2 $1"
 }
 
 # Adds an alias for every install flatpak application
-foreach app in $(flatpak list --columns=application --app) ; do
+foreach app in $(flatpak list --columns=application --all) ; do
     flatpak_add_alias $app
+; done
+
+# Adds an alias for every user installed flatpak (overwriting all alias)
+foreach app in $(flatpak list --columns=application --user) ; do
+    flatpak_add_alias $app --user
 ; done
