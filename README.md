@@ -5,6 +5,7 @@ The (unofficial) [flatpak](https://flatpak.org) plugin that adds several aiases 
 
 ### Installation
 Add the following to your ~/.zshrc file 
+
 ```plugins=(... flatpak)```
 
 ### Aliases
