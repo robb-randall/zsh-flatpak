@@ -1,10 +1,10 @@
 # zsh-flatpak
 
-### Installation
-Add ```source ~/.zsh/zsh-flatpak/zsh-flatpak-zsh``` to your .zshrc
+### Indroduction
+The (unofficial) [flatpak](https://flatpak.org) plugin that adds several aiases for managing your flatpak applications.  When executed, an alias is generated for each flatpak application installed on the system (both system and user).
 
-### Execution
-When the script is ran, it adds the following alias, along with aliases for each install flatpak application.
+### Installation
+Add ```plugins=(... flatpak)``` to your .zshrc file
 
 ### Aliases
 |Name|What|Command|
@@ -32,3 +32,7 @@ Creates an alias for the application
 
 ###### Results:
 An alias named `steam` that executes ```flatpak run --user com.valvesoftware.Steam```
+
+### Maintainer
+[Robb](https://github.com/robb-randall)
+[robb-randall/zsh-flatpak](https://github.com/robb-randall/zsh-flatpak)
