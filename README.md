@@ -1,10 +1,12 @@
-# zsh-flatpak
+# flatpak
 
 ### Indroduction
 The (unofficial) [flatpak](https://flatpak.org) plugin that adds several aiases for managing your flatpak applications.  When executed, an alias is generated for each flatpak application installed on the system (both system and user).
 
 ### Installation
-Add the following to your ~/.zshrc file 
+Flatpak must be installed and setup ([https://flatpak.org/setup/](https://flatpak.org/setup/))
+
+Once flatpak is installed, add the following to your ~/.zshrc file
 
 ```plugins=(... flatpak)```
 
